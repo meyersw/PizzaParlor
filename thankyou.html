@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <!--
@@ -7,12 +7,22 @@
        Author: William Meyers
        Date:   2024-07-08
    
-       Filename: menu.html
+       Filename: thankyou.html
       -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title>Menu - Cheech's Flexible Pizza Parlor</title>
+    <meta charset="utf-8">
+    <script>
+        function printQuery() {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                document.write(pair[0] + ": " + pair[1] + "<br />");
+            }
+        }
+    </script>
+    <link href="style.css" rel="stylesheet">
+    <title>Thank You: Cheech's Flexible Pizza Parlor</title>
 </head>
 
 <body>
@@ -23,7 +33,6 @@
         They must use flexboxes to display in blocks alongside each other.
 When the viewport shrinks below 568px, the flexboxes (navigation items) will become stacked on top of each other. 
         -->
-
         <img src="logo.jpg" alt="Cheech's Flexible Pizza Parlor logo">
         <nav>
             <ul>
@@ -34,15 +43,14 @@ When the viewport shrinks below 568px, the flexboxes (navigation items) will bec
             </ul>
         </nav>
     </header>
+    <div class="container">
+        <h2>Thank you for your order!</h2>
 
+        <script>
+            printQuery();
+        </script>
+    </div>
+    <img src="crustcrusader.jpg" alt="crustcrusader">
 </body>
-
-<!--
-Here you will display 6 pizzas.
-
-Each of these pictures should include a small description of the pizza type.
-Each of these groups (image and descriptions) should be displayed in a row / column format (as seen in the walk-through video) using flex boxes. NO CREDIT WILL BE GIVEN FOR FLOATING these as columns. 
-When the viewport is less than 568pixels, the images/descriptions should stack on top of each other
--->
 
 </html>
