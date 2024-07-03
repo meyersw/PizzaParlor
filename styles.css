@@ -11,9 +11,113 @@
 
 /* Basic Designs */
 
+header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header>img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header>h1 {
+    position: absolute;
+    top: 10vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 9vw;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 10px 5px 5px black;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 5vw;
+    color: black;
+    font-variant: small-caps;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    border: solid 2px;
+    border-color: red;
+}
+
+div>img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+    font-size: 3vw;
+}
+
 /* Flex Designs */
 
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex-basis: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* Mobile Designs 0 to 567 px */
+
+@media screen and (max-width: 568px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+}
 
 /* Tablet and Desktop Designs 568+ px */
 
