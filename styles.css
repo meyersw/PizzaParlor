@@ -84,9 +84,9 @@ a:hover {
     font-size: 3vw;
 }
 
-#buttons{
+#buttons {
     border: solid 2px;
-    border-color: red; 
+    border-color: red;
     padding: 10px;
     margin: 5px;
     justify-content: center;
@@ -94,9 +94,9 @@ a:hover {
     text-align: center;
 }
 
-article{
+article {
     border: solid 2px;
-    border-color: red; 
+    border-color: red;
     padding: 10px;
     margin: 5px;
     justify-content: center;
@@ -192,7 +192,7 @@ ul>li {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
+
     .column-container>div {
         background-color: #f1f1f1;
         margin: 10px;
@@ -210,22 +210,22 @@ ul>li {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     nav>ul {
         display: flex;
         background-color: DodgerBlue;
         flex-direction: column;
         flex-wrap: wrap;
-    
+
     }
-    
+
     ul>li {
         background-color: #f1f1f1;
         padding: 10px;
         font-size: 15px;
         margin-left: auto;
         margin-right: auto;
-    
+
     }
 
 }
