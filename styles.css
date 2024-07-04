@@ -51,6 +51,15 @@ div {
     border-color: red;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    border: solid 2px;
+    border-color: red;
+}
+
 div>img {
     width: 100%;
     margin-left: auto;
@@ -73,6 +82,26 @@ a:hover {
     text-decoration: none;
     color: red;
     font-size: 3vw;
+}
+
+#buttons{
+    border: solid 2px;
+    border-color: red; 
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article{
+    border: solid 2px;
+    border-color: red; 
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Flex Designs */
@@ -100,7 +129,47 @@ body {
     margin-right: auto;
 }
 
+nav {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+nav>ul {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+ul>li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.column-container {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex-basis: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Mobile Designs 0 to 567 px */
 
@@ -117,8 +186,46 @@ body {
         flex-wrap: nowrap;
     }
 
+    .column-container {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .column-container>div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        flex-basis: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav>ul {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    
+    ul>li {
+        background-color: #f1f1f1;
+        padding: 10px;
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
 }
-
-/* Tablet and Desktop Designs 568+ px */
-
-/* Print Designs hide nav */
