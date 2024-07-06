@@ -1,12 +1,12 @@
 @charset "utf-8";
 /*
-       Cheech's Flexible Pizza Parlor
-       Author: William Meyers
-       Date:   2024-07-08
-   
-       Filename: styles.css
+Cheech's Flexible Pizza Parlor
+Author: William Meyers
+Date:   2024-07-08
 
-   This file contains the screen styles used with Cheech's Flexible Pizza Parlor
+Filename: styles.css
+
+This file contains the screen styles used with Cheech's Flexible Pizza Parlor
 */
 
 /* Basic Designs */
@@ -58,6 +58,8 @@ ul {
 li {
     border: solid 2px;
     border-color: red;
+    width: 150px;
+    text-align: center;
 }
 
 div>img {
@@ -110,6 +112,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: dodgerblue;
 }
 
 .flex-container {
@@ -151,8 +154,9 @@ ul>li {
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
+
 
 .column-container {
     display: flex;
